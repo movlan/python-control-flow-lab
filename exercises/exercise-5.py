@@ -12,12 +12,13 @@
 #      etc.
 
 # Hint: The next number is found by adding the two numbers before it
-i = 1
-nth = 1
+i = 0
+nth = 0
 n_plus_1th = 1
 while i < 50:
+    print(f'term: {i} / number: {nth}')
     temp = n_plus_1th
     n_plus_1th = nth + temp
     nth = temp
     i += 1
-print(nth)
+print(f'term: {i} / number: {nth}')
